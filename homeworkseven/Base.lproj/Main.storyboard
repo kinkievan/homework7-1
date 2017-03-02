@@ -1,26 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homeworkseven" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="5JE-xF-IUI">
+                                <rect key="frame" x="20" y="249.66666666666669" width="118.33333333333334" height="236.66666666666669"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5JE-xF-IUI" secondAttribute="height" multiplier="1:2" id="XL6-Fg-plf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="055-U1-sOD">
+                                <rect key="frame" x="148.33333333333337" y="250.33333333333331" width="117.66666666666663" height="235.33333333333331"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="055-U1-sOD" secondAttribute="height" multiplier="1:2" id="LXn-20-wAu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="hEa-Wf-zFI">
+                                <rect key="frame" x="276" y="249.66666666666669" width="118" height="236.66666666666669"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hEa-Wf-zFI" secondAttribute="height" multiplier="1:2" id="E3l-lh-Gcm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEa-Wf-zFI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2dQ-fX-uK9"/>
+                            <constraint firstItem="5JE-xF-IUI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Rk-SP-4GZ"/>
+                            <constraint firstItem="hEa-Wf-zFI" firstAttribute="leading" secondItem="055-U1-sOD" secondAttribute="trailing" constant="10" id="7R4-OH-5Zd"/>
+                            <constraint firstAttribute="trailing" secondItem="hEa-Wf-zFI" secondAttribute="trailing" constant="20" id="K8h-TN-p2Q"/>
+                            <constraint firstItem="5JE-xF-IUI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="NWL-kr-Z4t"/>
+                            <constraint firstItem="hEa-Wf-zFI" firstAttribute="width" secondItem="5JE-xF-IUI" secondAttribute="width" id="YQ2-oQ-Brg"/>
+                            <constraint firstItem="055-U1-sOD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iBN-gB-uJ0"/>
+                            <constraint firstItem="055-U1-sOD" firstAttribute="leading" secondItem="5JE-xF-IUI" secondAttribute="trailing" constant="10" id="sMx-t6-eik"/>
+                            <constraint firstItem="055-U1-sOD" firstAttribute="width" secondItem="5JE-xF-IUI" secondAttribute="width" id="yn1-MX-eme"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="333" height="500"/>
+        <image name="2" width="401" height="600"/>
+        <image name="3" width="390" height="480"/>
+    </resources>
 </document>
